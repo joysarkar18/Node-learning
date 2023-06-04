@@ -35,6 +35,20 @@ body{
 .link:active{
     color: rgb(255, 25, 0); 
 }
+.button{
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 40px;
+    width: 185px;
+    font-size: 18px;
+    background-color: rgb(8, 191, 48);
+    font-weight: bold;
+
+}
+.button:hover{
+    background-color: green;
+}
+
 #midpart{
     
     height: 500px;
