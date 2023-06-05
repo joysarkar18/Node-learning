@@ -4,6 +4,11 @@ body{
    margin: 0;
 
 }
+#profile{
+    height: 260px;
+    width: 300px;
+    border-radius: 30px;
+}
 .navbar{
     height: 4%;
     display: flex;

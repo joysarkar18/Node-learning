@@ -18,11 +18,32 @@
                 <li class="item"><a class="link" href="/form">Add profile</a></li>
             </ul>
         </nav>
-        
+
     </header>
     <div id="midpart">
-        <h1 id="mainHeader"> All Items</h1>
-        
+        {{#if hasElement}}
+            {{#each items}}
+                <div>
+                    <h1 id="mainHeader"> All Items</h1>
+
+                    <div>
+                        <div id="profile">
+                            <img src="https://media.vanityfair.com/photos/6319eab06009e759e6638e28/master/w_2560%2Cc_limit/1421315651"
+                                alt="image not loading" width="300" height="250">
+                        </div>
+
+                        <h4>{{this.FirstName}} {{this.LastName}}</h4>
+
+                    </div>
+                </div>
+            {{/each}}    
+
+        {{else}}
+        <div>
+            <h1 id="mainHeader">No Item Added</h1>
+        </div>
+        {{/if}}
+
     </div>
 
 </body>

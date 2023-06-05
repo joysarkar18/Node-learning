@@ -3,10 +3,7 @@ const path = require('path')
 const router = express.Router();
 
 
-router.get('/form', (req , res)=>{
-    res.render('index' , {name : "Please"});
-    // res.sendFile(path.join(__dirname ,"../", 'Screens' , 'form.html'));
-
-});
+const personController = require("../controllers/personController")
+router.get('/form', personController.getPerson );
 
 exports.router = router;
