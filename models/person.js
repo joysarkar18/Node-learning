@@ -1,18 +1,18 @@
 const items = [];
-module.exports =  class person{
-     
-    constructor(id , firstName , LastName , Email){
-        this.id= id ;
+module.exports = class person {
+
+    constructor(id, firstName, lastName, email) {
+        this.id = id;
         this.firstName = firstName;
-        this.LastName = LastName;
-        this.Email = Email;
+        this.lastName = lastName;
+        this.email = email;
     }
 
-    save(){
+    save() {
         items.push(this);
     }
 
-    static getAllItems(){
+    static getAllItems() {
         return items;
     }
 

@@ -4,6 +4,6 @@ const router = express.Router();
 
 
 const personController = require("../controllers/personController")
-router.get('/form', personController.getPerson );
+router.get('/form', personController.getPerson);
 
 exports.router = router;

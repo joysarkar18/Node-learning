@@ -1,44 +1,43 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
 
     <title>Fill the form</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <ul class="menu">
-                <li class="item"> <a class="link" href="/">Home</a> </li>
-                <li class="item"><a class="link" href="/form">Add profile</a></li>
-            </ul>
-        </nav>
-        
+      <nav class="navbar">
+        <ul class="menu">
+          <li class="item"> <a class="link" href="/">Home</a> </li>
+          <li class="item"><a class="link" href="/form">Add profile</a></li>
+        </ul>
+      </nav>
+
     </header>
     <div id="midpart">
-        <h1 id="mainHeader">Fill the form {{name}}</h1>
-        <form action="/add" method="POST">
-            <div>First name</div>
-            <input class = "text" type="text" name="FirstName">
-            <br>
-            <br>
-            <div>Last name</div>
-            <input class="text" type="text" name="LastName">
-            <br>
-            <br>
-            <div>Email</div>
-            <input class="text" type="email" name="Email">
-            <br>
-            <br>
-            <button class="button" type="submit">SUBMIT</button>
-        </form>
+      <h1 id="mainHeader">Fill the form {{name}}</h1>
+      <form action="/add" method="POST">
+        <div>First name</div>
+        <input class="text" type="text" name="FirstName" />
+        <br />
+        <br />
+        <div>Last name</div>
+        <input class="text" type="text" name="LastName" />
+        <br />
+        <br />
+        <div>Email</div>
+        <input class="text" type="email" name="Email" />
+        <br />
+        <br />
+        <button class="button" type="submit">SUBMIT</button>
+      </form>
     </div>
 
-</body>
+  </body>
 
 </html>

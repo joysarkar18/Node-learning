@@ -1,51 +1,56 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
 
     <title>Fill the form</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <ul class="menu">
-                <li class="item"> <a class="link" href="/">Home</a> </li>
-                <li class="item"><a class="link" href="/form">Add profile</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <ul class="menu">
+          <li class="item"> <a class="link" href="/">Home</a> </li>
+          <li class="item"><a class="link" href="/form">Add profile</a></li>
+        </ul>
+      </nav>
 
     </header>
     <div id="midpart">
-        {{#if hasElement}}
-            {{#each items}}
-                <div>
-                    <h1 id="mainHeader"> All Items</h1>
+      {{#if hasElement}}
+        <h1 id="mainHeader"> All Items</h1>
+        {{#each items}}
+          <div>
 
-                    <div>
-                        <div id="profile">
-                            <img src="https://media.vanityfair.com/photos/6319eab06009e759e6638e28/master/w_2560%2Cc_limit/1421315651"
-                                alt="image not loading" width="300" height="250">
-                        </div>
+            <div>
+              <div id="profile">
+                <img
+                  src="https://media.vanityfair.com/photos/6319eab06009e759e6638e28/master/w_2560%2Cc_limit/1421315651"
+                  alt="image not loading"
+                  width="100"
+                  height="100"
+                />
+              </div>
 
-                        <h4>{{this.FirstName}} {{this.LastName}}</h4>
+              <h4>{{this.firstName}} {{this.lastName}} </h4>
+              <p>{{this.email}}</p>
+              <a href="/products/{{this.id}}">details</a>
 
-                    </div>
-                </div>
-            {{/each}}    
+            </div>
+          </div>
+        {{/each}}
 
-        {{else}}
+      {{else}}
         <div>
-            <h1 id="mainHeader">No Item Added</h1>
+          <h1 id="mainHeader">No Item Added</h1>
         </div>
-        {{/if}}
+      {{/if}}
 
     </div>
 
-</body>
+  </body>
 
 </html>
